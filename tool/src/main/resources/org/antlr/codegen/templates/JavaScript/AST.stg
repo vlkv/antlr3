@@ -41,7 +41,7 @@ parserMembers() ::= <<
 <!protected TreeAdaptor adaptor = new CommonTreeAdaptor();<\n>!>
 setTreeAdaptor: function(adaptor) {
     this.adaptor = adaptor;
-    <grammar.directDelegates:{g|<g:delegateName()>.setTreeAdaptor(this.adaptor);}>
+    <grammar.directDelegates:{g|this.<g:delegateName()>.setTreeAdaptor(this.adaptor);}>
 },
 getTreeAdaptor: function() {
     return this.adaptor;
