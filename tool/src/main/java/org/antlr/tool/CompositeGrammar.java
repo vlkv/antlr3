@@ -210,6 +210,9 @@ public class CompositeGrammar {
 		List<Grammar> grammars = new ArrayList();
 		for (int i = 0; children!=null && i < children.size(); i++) {
 			CompositeGrammarTree child = (CompositeGrammarTree) children.get(i);
+			if (child.grammar == null) {
+				continue;
+			}
 			grammars.add(child.grammar);
 		}
 		return grammars;
@@ -219,7 +222,10 @@ public class CompositeGrammar {
 	public List<Grammar> getIndirectDelegates(Grammar g) {
 		List<Grammar> direct = getDirectDelegates(g);
 		List<Grammar> delegates = getDelegates(g);
-		delegates.removeAll(direct);
+		if ( delegates!=null && direct!=null ) {
+
+			delegates.removeAll(direct);
+		}
 		return delegates;
 	}
 
