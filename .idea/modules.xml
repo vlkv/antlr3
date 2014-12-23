@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tool/antlr.iml" filepath="$PROJECT_DIR$/tool/antlr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/antlr-master.iml" filepath="$PROJECT_DIR$/antlr-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtime/Java/antlr-runtime.iml" filepath="$PROJECT_DIR$/runtime/Java/antlr-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/antlr3-maven-plugin/antlr3-maven-plugin.iml" filepath="$PROJECT_DIR$/antlr3-maven-plugin/antlr3-maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gunit/gunit.iml" filepath="$PROJECT_DIR$/gunit/gunit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gunit-maven-plugin/maven-gunit-plugin.iml" filepath="$PROJECT_DIR$/gunit-maven-plugin/maven-gunit-plugin.iml" />
+    </modules>
+  </component>
+</project>
